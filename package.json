@@ -1,0 +1,20 @@
+{
+  "name": "homebridge-cmdlock",
+  "version": "0.0.1",
+  "description": "node.js child_process plugin for homebridge: https://github.com/nfarina/homebridge",
+  "license": "ISC",
+  "keywords": [
+    "homebridge-plugin"
+  ],
+  "engines": {
+    "node": ">=0.12.0",
+    "homebridge": ">=0.2.0"
+  },
+  "author": {
+    "name": "JonesChi"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/JonesChi/homebridge-cmdlock"
+  }
+}

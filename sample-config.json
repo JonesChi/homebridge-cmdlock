@@ -1,0 +1,24 @@
+{
+    "bridge": {
+        "name": "Homebridge",
+        "username": "CD:22:3D:E3:CE:30",
+        "port": 51826,
+        "pin": "031-45-156"
+    },
+    
+    "description": "The Onion!",
+
+    "platforms": [],
+
+    "accessories": [
+        {
+            "accessory": "CmdLock",
+            "name": "Door",
+            "lock_cmd": "lock door cmd",
+            "unlock_cmd": "unlock door cmd",
+            "state_cmd": "get lock state cmd",
+	    "auto_lock": true,
+	    "auto_lock_delay": 10
+        }
+    ]
+}
