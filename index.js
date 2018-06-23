@@ -53,7 +53,7 @@ CmdLockAccessory.prototype = {
 					setTimeout(function(instance) {
 						instance.cmdRequest(instance.lock_cmd, function(error, stdout, stderr) {
 							instance.log('Auto lock function succeeded!');
-							instance.lockService.setCharacteristic(Characteristic.LockCurrentState, Characteristic.LockCurrentState.SECURED);
+							instance.lockService.setCharacteristic(Characteristic.LockTargetState, Characteristic.LockTargetState.SECURED);
 							instance.log(stdout);
 						}.bind(this));
 					}, this.auto_lock_delay*1000, this);
