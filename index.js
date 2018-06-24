@@ -95,9 +95,9 @@ CmdLockAccessory.prototype = {
 			.on('get', this.getState.bind(this));
 
 		this.lockService
-			.getCharacteristic(Characteristic.LockTargetState)
-			.on('get', this.getState.bind(this))
-			.on('set', this.setState.bind(this));
+                        .setCharacteristic(Characteristic.LockTargetState, Characteristic.LockTargetState.SECURED)
+                        .getCharacteristic(Characteristic.LockTargetState)
+                        .on('set', this.setState.bind(this));
 
 		return [this.lockService];
 	}
