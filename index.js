@@ -51,8 +51,8 @@ CmdLockAccessory.prototype = {
 
 				if (!lock && this.auto_lock) {
 					setTimeout(function(instance) {
-            instance.lockService.setCharacteristic(Characteristic.LockTargetState, Characteristic.LockTargetState.SECURED);
-            instance.log('Auto lock function succeeded!');
+						instance.lockService.setCharacteristic(Characteristic.LockTargetState, Characteristic.LockTargetState.SECURED);
+						instance.log('Auto lock function succeeded!');
 					}.bind(this), this.auto_lock_delay*1000, this);
 				}
 				callback();
